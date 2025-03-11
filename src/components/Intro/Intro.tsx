@@ -8,7 +8,7 @@ export default function Intro() {
         {/* Profile Picture (Left Side) */}
         <div className="w-72 h-72 md:w-80 md:h-80 overflow-hidden rounded-lg border-4 border-[#DAC5A7] shadow-lg">
           <img
-            src="/images/img.png" // Replace with your profile picture path
+            src="/images/img.webp" // Replace with your profile picture path
             alt="Shahzaib Akhtar"
             className="w-full h-full object-cover"
           />
