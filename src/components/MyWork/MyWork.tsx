@@ -11,7 +11,6 @@ const portfolioItems = [
   { id: 7, category: "Digital", image: "/images/digital1.png" },
   { id: 8, category: "Digital", image: "/images/digital2.jpg" },
   { id: 9, category: "Digital", image: "/images/digital3.jpg" },
-  
 ];
 
 const categories = ["Show All", "Print & Outdoor", "Digital"];
@@ -54,18 +53,17 @@ export default function MyWork() {
         {filteredItems.map((item) => (
           <div
             key={item.id}
-            className={`relative group rounded-lg shadow-lg overflow-hidden bg-gray-900 ${
-              item.category === "Digital" ? "sm:col-span-1 md:col-span-1 lg:col-span-1" : ""
-            }`}
+            className="relative group rounded-lg shadow-lg overflow-hidden bg-gray-900"
           >
             <div className="w-full h-64">
               <img
                 src={item.image}
                 alt="Project"
+                loading="lazy"
                 className="w-full h-full object-cover rounded-lg transition duration-300 group-hover:scale-105"
               />
             </div>
-            {/* Overlay with Title and Button (Always Visible) */}
+            {/* Overlay with Title and Button */}
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-4">
               <h3 className="text-lg font-semibold text-[#DAC5A7]">LOREM IPSUM</h3>
               <button className="mt-2 flex items-center gap-2 bg-black text-[#DAC5A7] px-3 py-1 rounded-lg text-sm font-medium hover:bg-gray-700">
